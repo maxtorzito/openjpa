@@ -1,0 +1,16 @@
+CREATE SCHEMA `jpa_test` DEFAULT CHARACTER SET utf8 ;
+
+
+CREATE  TABLE `jpa_test`.`users` (
+  `user_id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
+  `nick_name` VARCHAR(255) NOT NULL ,
+  PRIMARY KEY (`user_id`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+INSERT INTO `jpa_test`.`users` (`nick_name`) VALUES ('USER ONE');
+INSERT INTO `jpa_test`.`users` (`nick_name`) VALUES ('USER TWO');
+INSERT INTO `jpa_test`.`users` (`nick_name`) VALUES ('USER THREE');
+
+
